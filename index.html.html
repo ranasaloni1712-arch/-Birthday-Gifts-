@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;600&display=swap');
+        
+        body { 
+            margin: 0; 
+            font-family: 'Poppins', sans-serif; 
+            /* Trending animated gradient background */
+            background: linear-gradient(-45deg, #ff9a9e, #fecfef, #a1c4fd, #c2e9fb); 
+            background-size: 400% 400%; 
+            animation: gradient 15s ease infinite; 
+            color: #333; 
+            overflow-x: hidden;
+        }
+
+        @keyframes gradient { 
+            0% {background-position: 0% 50%;} 
+            50% {background-position: 100% 50%;} 
+            100% {background-position: 0% 50%;} 
+        }
+
+        .hero { 
+            height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            text-align: center; 
+        }
+
+        /* Trending Glassmorphism Effect */
+        .glass-card { 
+            background: rgba(255, 255, 255, 0.25); 
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+            backdrop-filter: blur(10px); 
+            -webkit-backdrop-filter: blur(10px); 
+            border-radius: 20px; 
+            border: 1px solid rgba(255, 255, 255, 0.18); 
+            padding: 40px; 
+            max-width: 600px; 
+            width: 90%; 
+        }
+
+        h1 { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 3em; 
+            margin-bottom: 10px; 
+            color: #ff4e50; 
+        }
+
+        p { font-size: 1.2em; line-height: 1.6; }
+
+        .btn { 
+            margin-top: 20px; 
+            padding: 12px 30px; 
+            border: none; 
+            border-radius: 25px; 
+            background: #ff4e50; 
+            color: white; 
+            font-size: 1em; 
+            cursor: pointer; 
+            transition: 0.3s; 
+            text-decoration: none; 
+            display: inline-block; 
+        }
+
+        .btn:hover { background: #f9d423; color: #333; transform: translateY(-3px); }
+
+        .gallery { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 20px; 
+            padding: 60px 20px; 
+            justify-content: center; 
+            background: rgba(255,255,255,0.4); 
+        }
+
+        /* Cute Polaroid Photo Style */
+        .polaroid { 
+            background: white; 
+            padding: 10px 10px 40px 10px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+            border-radius: 5px; 
+            transform: rotate(-2deg); 
+            transition: 0.3s; 
+        }
+        
+        .polaroid:nth-child(even) { transform: rotate(3deg); }
+        .polaroid:hover { transform: scale(1.05); z-index: 10; box-shadow: 0 10px 25px rgba(0,0,0,0.2); }
+        .polaroid img { width: 250px; height: 250px; object-fit: cover; }
+        .footer { text-align: center; padding: 40px; font-size: 0.9em; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="glass-card">
+            <h1>Happy Birthday, My Love!</h1>
+            <p>To the most amazing person. May your day be as beautiful, radiant, and special as you are.</p>
+            <a href="#memories" class="btn">Our Memories</a>
+        </div>
+    </div>
+
+    <div id="memories" class="gallery">
+        <!-- Add links to your photos inside the src="" quotes below -->
+        <div class="polaroid">
+            <img src="https://images.unsplash.com/photo-1518199268839-0f64bebb584d?auto=format&fit=crop&w=400&q=80" alt="Memory 1">
+        </div>
+        <div class="polaroid">
+            <img src="https://images.unsplash.com/photo-1517462964-21fdcec3f25b?auto=format&fit=crop&w=400&q=80" alt="Memory 2">
+        </div>
+        <div class="polaroid">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=400&q=80" alt="Memory 3">
+        </div>
+    </div>
+
+    <div class="footer">
+        Made with ❤️ just for you.
+    </div>
+</body>
+</html>
